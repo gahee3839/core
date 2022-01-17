@@ -26,7 +26,8 @@ public class AppConfig {    //구현객체를 여기서 생성해서 주입해�
     @Bean
     public OrderService orderService(){
         System.out.println("call AppConfig.orderService");
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+        return null;
     }
     @Bean
     public DiscountPolicy discountPolicy() {
